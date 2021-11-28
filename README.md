@@ -42,7 +42,8 @@ Example of the target schema in xml format:
 		</genres>
 		<price>15</price>
 		<language> english </language>
-	</book>```
+	</book>
+.```
 
 ## Files description/ Pipline
 
