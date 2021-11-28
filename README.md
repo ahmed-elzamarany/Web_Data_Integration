@@ -43,7 +43,7 @@ Example of the target schema in xml format:
 		<price>15</price>
 		<language> english </language>
 	</book>
-xml```
+```
 
 ## Files description/ Pipline
 
