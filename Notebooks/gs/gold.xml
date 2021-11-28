@@ -1,0 +1,1021 @@
+<books>
+	<book>
+		<id>goodreads_26457</id><title>American Pastoral</title>
+		<authors>
+			<author>
+				<name>Philip Roth</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>435</pages>
+		<year>1997</year>
+		<publisher>Houghton Mifflin Harcourt</publisher>
+		<price>9</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Classics</genre_type>
+			<genre_type>Literature</genre_type>
+			<genre_type>Novels</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_36573</id><title>Wicca: A Guide for the Solitary Practitioner</title>
+		<authors>
+			<author>
+				<name>Scott Cunningham</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>240</pages>
+		<year>1988</year>
+		<publisher>Llewellyn Publications</publisher>
+		<price>9</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Religion</genre_type>
+			<genre_type>Wicca</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Spirituality</genre_type>
+			<genre_type>Religion</genre_type>
+			<genre_type>Religion</genre_type>
+			<genre_type>Paganism</genre_type>
+			<genre_type>Witchcraft</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_3678</id><title>Sarum: The Novel of England</title>
+		<authors>
+			<author>
+				<name>Edward Rutherfurd</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>912</pages>
+		<year>1997</year>
+		<publisher>Ballantine Books</publisher>
+		<price>10</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Historical</genre_type>
+			<genre_type>Historical Fiction</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Historical</genre_type>
+			<genre_type>European Literature</genre_type>
+			<genre_type>British Literature</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_48180</id><title>No Angel</title>
+		<authors>
+			<author>
+				<name>Penny Vincenzi</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>626</pages>
+		<year>2003</year>
+		<publisher>Overlook Press</publisher>
+		<price>10</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Historical</genre_type>
+			<genre_type>Historical Fiction</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Romance</genre_type>
+			<genre_type>Historical</genre_type>
+			<genre_type>European Literature</genre_type>
+			<genre_type>British Literature</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_40894</id><title>Danny the Champion of the World</title>
+		<authors>
+			<author>
+				<name>Roald Dahl</name>
+				<name>Quentin Blake</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>214</pages>
+		<year>1988</year>
+		<publisher>Puffin Books</publisher>
+		<price>5</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Childrens</genre_type>
+			<genre_type>Fiction</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_9110</id><title>Absolutely, Positively</title>
+		<authors>
+			<author>
+				<name>Jayne Ann Krentz</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>384</pages>
+		<year>2003</year>
+		<publisher>Pocket Books</publisher>
+		<language>English</language>
+		<genres>
+			<genre_type>Romance</genre_type>
+			<genre_type>Romance</genre_type>
+			<genre_type>Contemporary Romance</genre_type>
+			<genre_type>Contemporary</genre_type>
+			<genre_type>Romance</genre_type>
+			<genre_type>Romantic Suspense</genre_type>
+			<genre_type>Suspense</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_49751</id><title>The Perks of Being a Wallflower</title>
+		<authors>
+			<author>
+				<name>Stephen Chbosky</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>226</pages>
+		<year>1999</year>
+		<publisher>MTV Books</publisher>
+		<price>6</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Young Adult</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Contemporary</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_8906</id><title>Georgiana: Duchess of Devonshire</title>
+		<authors>
+			<author>
+				<name>Amanda Foreman</name>
+			</author>
+		</authors>
+		<rating>3.5</rating>
+		<pages>456</pages>
+		<year>2000</year>
+		<publisher>Random House Trade</publisher>
+		<price>10</price>
+		<language>English</language>
+		<genres>
+			<genre_type>History</genre_type>
+			<genre_type>Biography</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Historical</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_46662</id><title>The Monk and the Philosopher: A Father and Son Discuss the Meaning of Life</title>
+		<authors>
+			<author>
+				<name>Jean-François Revel</name>
+				<name>Matthieu Ricard</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>384</pages>
+		<year>2000</year>
+		<publisher>Schocken Books</publisher>
+		<price>10</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Philosophy</genre_type>
+			<genre_type>Religion</genre_type>
+			<genre_type>Buddhism</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Religion</genre_type>
+			<genre_type>Spirituality</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_4620</id><title>The Tiger Rising</title>
+		<authors>
+			<author>
+				<name>Kate DiCamillo</name>
+			</author>
+		</authors>
+		<rating>3.5</rating>
+		<pages>128</pages>
+		<year>2002</year>
+		<publisher>Candlewick Press (MA)</publisher>
+		<price>4</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Young Adult</genre_type>
+			<genre_type>Childrens</genre_type>
+			<genre_type>Realistic Fiction</genre_type>
+			<genre_type>Childrens</genre_type>
+			<genre_type>Middle Grade</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_842</id><title>Still Life with Woodpecker</title>
+		<authors>
+			<author>
+				<name>Tom Robbins</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>288</pages>
+		<year>1990</year>
+		<publisher>Bantam</publisher>
+		<price>9</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Humor</genre_type>
+			<genre_type>Literature</genre_type>
+			<genre_type>Novels</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_3248</id><title>Gone for Good</title>
+		<authors>
+			<author>
+				<name>Harlan Coben</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>432</pages>
+		<year>2003</year>
+		<publisher>Dell</publisher>
+		<price>5</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Mystery</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Thriller</genre_type>
+			<genre_type>Suspense</genre_type>
+			<genre_type>Mystery</genre_type>
+			<genre_type>Crime</genre_type>
+			<genre_type>Thriller</genre_type>
+			<genre_type>Mystery Thriller</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_50537</id><title>The Painted Word</title>
+		<authors>
+			<author>
+				<name>Tom Wolfe</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>112</pages>
+		<year>1975</year>
+		<publisher>Farrar, Straus and Giroux</publisher>
+		<price>8</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Art</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Writing</genre_type>
+			<genre_type>Essays</genre_type>
+			<genre_type>History</genre_type>
+			<genre_type>Art</genre_type>
+			<genre_type>Art History</genre_type>
+			<genre_type>Criticism</genre_type>
+			<genre_type>Culture</genre_type>
+			<genre_type>Society</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_23715</id><title>The Power of Now: A Guide to Spiritual Enlightenment</title>
+		<authors>
+			<author>
+				<name>Eckhart Tolle</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>258</pages>
+		<year>1999</year>
+		<publisher>New World Library</publisher>
+		<price>8</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Spirituality</genre_type>
+			<genre_type>Self Help</genre_type>
+			<genre_type>Philosophy</genre_type>
+			<genre_type>Psychology</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_50931</id><title>Batman: The Long Halloween</title>
+		<authors>
+			<author>
+				<name>Jeph Loeb</name>
+				<name>Tim Sale</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>384</pages>
+		<year>1999</year>
+		<publisher>DC Comics</publisher>
+		<language>English</language>
+		<genres>
+			<genre_type>Sequential Art</genre_type>
+			<genre_type>Comics</genre_type>
+			<genre_type>Sequential Art</genre_type>
+			<genre_type>Graphic Novels</genre_type>
+			<genre_type>Dc Comics</genre_type>
+			<genre_type>Batman</genre_type>
+			<genre_type>Superheroes</genre_type>
+			<genre_type>Dc Comics</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Comics</genre_type>
+			<genre_type>Comic Book</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_25543</id><title>The Beastly Beatitudes of Balthazar B</title>
+		<authors>
+			<author>
+				<name>J. P. Donleavy</name>
+			</author>
+		</authors>
+		<rating>3.5</rating>
+		<pages>416</pages>
+		<year>2001</year>
+		<publisher>Grove Press</publisher>
+		<price>9</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Literature</genre_type>
+			<genre_type>Humor</genre_type>
+			<genre_type>Cultural</genre_type>
+			<genre_type>Ireland</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_37051</id><title>Steps</title>
+		<authors>
+			<author>
+				<name>Jerzy Kosiński</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>148</pages>
+		<year>1997</year>
+		<publisher>Grove Press</publisher>
+		<price>9</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Short Stories</genre_type>
+			<genre_type>Novels</genre_type>
+			<genre_type>Literature</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_24216</id><title>Practical Ethics</title>
+		<authors>
+			<author>
+				<name>Peter Singer</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>353</pages>
+		<year>1993</year>
+		<publisher>Cambridge University Press; 3 edition</publisher>
+		<price>6</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Philosophy</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Science</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_11133</id><title>Flashforward</title>
+		<authors>
+			<author>
+				<name>Robert J. Sawyer</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>320</pages>
+		<year>1999</year>
+		<publisher>Tor Books</publisher>
+		<price>6</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Science Fiction</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Science Fiction</genre_type>
+			<genre_type>Time Travel</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_555</id><title>Interpreter of Maladies</title>
+		<authors>
+			<author>
+				<name>Jhumpa Lahiri</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>198</pages>
+		<year>1999</year>
+		<publisher>Houghton Mifflin Harcourt</publisher>
+		<price>8</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Short Stories</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Cultural</genre_type>
+			<genre_type>India</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_13947</id><title>Paris to the Moon</title>
+		<authors>
+			<author>
+				<name>Adam Gopnik</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>368</pages>
+		<year>2001</year>
+		<publisher>Random House Trade Paperbacks</publisher>
+		<price>9</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Travel</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Autobiography</genre_type>
+			<genre_type>Memoir</genre_type>
+			<genre_type>Cultural</genre_type>
+			<genre_type>France</genre_type>
+			<genre_type>Writing</genre_type>
+			<genre_type>Essays</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_9313</id><title>Superfudge</title>
+		<authors>
+			<author>
+				<name>Judy Blume</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>192</pages>
+		<year>2002</year>
+		<publisher>Puffin Books</publisher>
+		<price>5</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Childrens</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Young Adult</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_24543</id><title>Random Family: Love, Drugs, Trouble, and Coming of Age in the Bronx</title>
+		<authors>
+			<author>
+				<name>Adrian Nicole LeBlanc</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>432</pages>
+		<year>2003</year>
+		<publisher>Scribner</publisher>
+		<price>8</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Sociology</genre_type>
+			<genre_type>Autobiography</genre_type>
+			<genre_type>Memoir</genre_type>
+			<genre_type>Biography</genre_type>
+			<genre_type>New York</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_3641</id><title>The Robber Bride</title>
+		<authors>
+			<author>
+				<name>Margaret Atwood</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>528</pages>
+		<year>1998</year>
+		<publisher>Anchor</publisher>
+		<price>10</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Cultural</genre_type>
+			<genre_type>Canada</genre_type>
+			<genre_type>Contemporary</genre_type>
+			<genre_type>Literary Fiction</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_10804</id><title>It</title>
+		<authors>
+			<author>
+				<name>Stephen King</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>1396</pages>
+		<year>1997</year>
+		<publisher>Signet Book</publisher>
+		<price>7</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Horror</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Fantasy</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_49292</id><title>The Boys of My Youth</title>
+		<authors>
+			<author>
+				<name>Jo Ann Beard</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>224</pages>
+		<year>1999</year>
+		<publisher>Back Bay Books; 1st edition</publisher>
+		<price>8</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Autobiography</genre_type>
+			<genre_type>Memoir</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Writing</genre_type>
+			<genre_type>Essays</genre_type>
+			<genre_type>Short Stories</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_34</id><title>Of Mice and Men</title>
+		<authors>
+			<author>
+				<name>John Steinbeck</name>
+			</author>
+		</authors>
+		<rating>3.5</rating>
+		<pages>112</pages>
+		<year>2002</year>
+		<publisher>Penguin Books</publisher>
+		<price>7</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Classics</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Academic</genre_type>
+			<genre_type>School</genre_type>
+			<genre_type>Literature</genre_type>
+			<genre_type>Historical</genre_type>
+			<genre_type>Historical Fiction</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_53295</id><title>Carnal Innocence</title>
+		<authors>
+			<author>
+				<name>Nora Roberts</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>512</pages>
+		<year>2000</year>
+		<publisher>Bantam Books</publisher>
+		<price>5</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Romance</genre_type>
+			<genre_type>Romance</genre_type>
+			<genre_type>Romantic Suspense</genre_type>
+			<genre_type>Romance</genre_type>
+			<genre_type>Contemporary Romance</genre_type>
+			<genre_type>Mystery</genre_type>
+			<genre_type>Contemporary</genre_type>
+			<genre_type>Suspense</genre_type>
+			<genre_type>Fiction</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_42946</id><title>Lost and Found</title>
+		<authors>
+			<author>
+				<name>Jayne Ann Krentz</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>368</pages>
+		<year>2001</year>
+		<publisher>Jove Books</publisher>
+		<price>5</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Romance</genre_type>
+			<genre_type>Romance</genre_type>
+			<genre_type>Romantic Suspense</genre_type>
+			<genre_type>Contemporary</genre_type>
+			<genre_type>Romance</genre_type>
+			<genre_type>Contemporary Romance</genre_type>
+			<genre_type>Mystery</genre_type>
+			<genre_type>Suspense</genre_type>
+			<genre_type>Fiction</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_31515</id><title>One Stick Song</title>
+		<authors>
+			<author>
+				<name>Sherman Alexie</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>91</pages>
+		<year>2000</year>
+		<publisher>Hanging Loose Press</publisher>
+		<price>14</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Poetry</genre_type>
+			<genre_type>Fiction</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_4470</id><title>The Sicilian</title>
+		<authors>
+			<author>
+				<name>Mario Puzo</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>416</pages>
+		<year>2001</year>
+		<publisher>Ballantine Books</publisher>
+		<price>5</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Mystery</genre_type>
+			<genre_type>Crime</genre_type>
+			<genre_type>Thriller</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_37047</id><title>The Corrosion of Character: The Personal Consequences of Work in the New Capitalism</title>
+		<authors>
+			<author>
+				<name>Richard Sennett</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>176</pages>
+		<year>2000</year>
+		<publisher>W. W. Norton &amp; Company; 1 edition</publisher>
+		<price>9</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Sociology</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Economics</genre_type>
+			<genre_type>Politics</genre_type>
+			<genre_type>Philosophy</genre_type>
+			<genre_type>Psychology</genre_type>
+			<genre_type>Business</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_3246</id><title>Nothing Lasts Forever</title>
+		<authors>
+			<author>
+				<name>Sidney Sheldon</name>
+			</author>
+		</authors>
+		<rating>3.5</rating>
+		<pages>384</pages>
+		<year>1994</year>
+		<publisher>Harpercollins Childrens Books</publisher>
+		<price>6</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Thriller</genre_type>
+			<genre_type>Mystery</genre_type>
+			<genre_type>Suspense</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_6909</id><title>The Princess</title>
+		<authors>
+			<author>
+				<name>Lori Wick</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>300</pages>
+		<year>1999</year>
+		<publisher>Harvest House Publishers; Repack edition</publisher>
+		<price>9</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Christian Fiction</genre_type>
+			<genre_type>Romance</genre_type>
+			<genre_type>Christian</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Romance</genre_type>
+			<genre_type>Christian Romance</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_5453</id><title>Truman</title>
+		<authors>
+			<author>
+				<name>David McCullough</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>1120</pages>
+		<year>1992</year>
+		<publisher>Simon &amp;amp; Schuster</publisher>
+		<price>13</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Biography</genre_type>
+			<genre_type>History</genre_type>
+			<genre_type>Politics</genre_type>
+			<genre_type>Presidents</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>North American Hi...</genre_type>
+			<genre_type>American History</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_22157</id><title>The Handmaid's Tale</title>
+		<authors>
+			<author>
+				<name>Margaret Atwood</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>324</pages>
+		<year>1986</year>
+		<publisher>Houghton Mifflin Harcourt</publisher>
+		<price>9</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Classics</genre_type>
+			<genre_type>Science Fiction</genre_type>
+			<genre_type>Dystopia</genre_type>
+			<genre_type>Science Fiction</genre_type>
+			<genre_type>Feminism</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_52751</id><title>The Teammates: A Portrait of a Friendship</title>
+		<authors>
+			<author>
+				<name>David Halberstam</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>224</pages>
+		<year>2004</year>
+		<publisher>Hyperion</publisher>
+		<price>9</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Sports and Games</genre_type>
+			<genre_type>Sports</genre_type>
+			<genre_type>Sports</genre_type>
+			<genre_type>Baseball</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Biography</genre_type>
+			<genre_type>History</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_28122</id><title>Pale Blue Dot: A Vision of the Human Future in Space</title>
+		<authors>
+			<author>
+				<name>Carl Sagan</name>
+				<name>Ann Druyan</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>384</pages>
+		<year>1997</year>
+		<publisher>Ballantine Books</publisher>
+		<price>11</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Science</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Science</genre_type>
+			<genre_type>Astronomy</genre_type>
+			<genre_type>Space</genre_type>
+			<genre_type>Philosophy</genre_type>
+			<genre_type>Science</genre_type>
+			<genre_type>Physics</genre_type>
+			<genre_type>Science</genre_type>
+			<genre_type>Popular Science</genre_type>
+			<genre_type>Science</genre_type>
+			<genre_type>Technology</genre_type>
+			<genre_type>Reference</genre_type>
+			<genre_type>Science</genre_type>
+			<genre_type>Engineering</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_2622</id><title>Firestarter</title>
+		<authors>
+			<author>
+				<name>Stephen King</name>
+			</author>
+		</authors>
+		<rating>3.5</rating>
+		<pages>416</pages>
+		<year>2003</year>
+		<publisher>Signet Book</publisher>
+		<price>5</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Horror</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Thriller</genre_type>
+			<genre_type>Science Fiction</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_3379</id><title>The Practice of the Presence of God</title>
+		<authors>
+			<author>
+				<name>Brother Lawrence</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>96</pages>
+		<year>1982</year>
+		<publisher>Whitaker House</publisher>
+		<price>3</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Christian</genre_type>
+			<genre_type>Spirituality</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Religion</genre_type>
+			<genre_type>Religion</genre_type>
+			<genre_type>Christianity</genre_type>
+			<genre_type>Religion</genre_type>
+			<genre_type>Theology</genre_type>
+			<genre_type>Religion</genre_type>
+			<genre_type>Faith</genre_type>
+			<genre_type>Christian</genre_type>
+			<genre_type>Christian Living</genre_type>
+			<genre_type>Classics</genre_type>
+			<genre_type>Prayer</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_1885</id><title>The Passion</title>
+		<authors>
+			<author>
+				<name>Jeanette Winterson</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>176</pages>
+		<year>1997</year>
+		<publisher>Grove Press</publisher>
+		<price>9</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Historical</genre_type>
+			<genre_type>Historical Fiction</genre_type>
+			<genre_type>Magical Realism</genre_type>
+			<genre_type>Lgbt</genre_type>
+			<genre_type>Glbt</genre_type>
+			<genre_type>Queer</genre_type>
+			<genre_type>Historical</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_2920</id><title>Under the Tuscan Sun</title>
+		<authors>
+			<author>
+				<name>Frances Mayes</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>304</pages>
+		<year>1997</year>
+		<publisher>Broadway Books</publisher>
+		<price>9</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Travel</genre_type>
+			<genre_type>Nonfiction</genre_type>
+			<genre_type>Autobiography</genre_type>
+			<genre_type>Memoir</genre_type>
+			<genre_type>Cultural</genre_type>
+			<genre_type>Italy</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_48214</id><title>The Christmas Basket</title>
+		<authors>
+			<author>
+				<name>Debbie Macomber</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>240</pages>
+		<year>2002</year>
+		<publisher>Harlequin MIRA</publisher>
+		<price>3</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Holiday</genre_type>
+			<genre_type>Christmas</genre_type>
+			<genre_type>Romance</genre_type>
+			<genre_type>Holiday</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Womens Fiction</genre_type>
+			<genre_type>Chick Lit</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_41587</id><title>Brian's Winter</title>
+		<authors>
+			<author>
+				<name>Gary Paulsen</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>144</pages>
+		<year>1996</year>
+		<publisher>Delacorte Books for Young Readers</publisher>
+		<price>5</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Young Adult</genre_type>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Adventure</genre_type>
+			<genre_type>Adventure</genre_type>
+			<genre_type>Survival</genre_type>
+			<genre_type>Realistic Fiction</genre_type>
+		</genres>
+	</book>
+	<book>
+		<id>goodreads_15264</id><title>Blessings</title>
+		<authors>
+			<author>
+				<name>Anna Quindlen</name>
+			</author>
+		</authors>
+		<rating>3</rating>
+		<pages>304</pages>
+		<year>2002</year>
+		<publisher>Random House; 1 edition</publisher>
+		<price>10</price>
+		<language>English</language>
+		<genres>
+			<genre_type>Fiction</genre_type>
+			<genre_type>Contemporary</genre_type>
+			<genre_type>Family</genre_type>
+		</genres>
+	</book>
+		<book>
+		<id>goodreads_3466</id><title>Ransom</title>
+		<authors>
+			<author>
+				<name>Julie Garwood</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>546</pages>
+		<publisher>Atria Books</publisher>
+		<price>5</price>
+		<language>English</language>
+		<year>1999</year>
+		<genres>
+			<genre_type>Romance</genre_type>
+			<genre_type>Historical Romance</genre_type>
+			<genre_type>Romance</genre_type>
+			<genre_type>Historical</genre_type>
+			<genre_type>Historical</genre_type>
+			<genre_type>Historical Fiction</genre_type>
+			<genre_type>Historical</genre_type>
+			<genre_type>Medieval</genre_type>
+		</genres>
+	<book>
+</books>

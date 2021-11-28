@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2021r3 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="target" library="xml" uid="6" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="750" lty="30" rbx="948" rby="355"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="books" expanded="1">
+										<entry name="book" inpkey="9" expanded="1">
+											<entry name="title" inpkey="7"/>
+											<entry name="authors" expanded="1">
+												<entry name="author" expanded="1">
+													<entry name="name" inpkey="10"/>
+												</entry>
+											</entry>
+											<entry name="rating" inpkey="11"/>
+											<entry name="pages" inpkey="12"/>
+											<entry name="publisher" inpkey="13"/>
+											<entry name="genres" expanded="1"/>
+											<entry name="price" inpkey="14"/>
+											<entry name="language" inpkey="15"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="target.xsd" instanceroot="{}books" inputinstance="target.xml" outputinstance="target.xml"/>
+					</data>
+				</component>
+				<component name="Book" library="text" uid="5" kind="16">
+					<properties/>
+					<view ltx="4" lty="45" rbx="244" rby="355"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Rows" outkey="16" expanded="1">
+										<entry name="title" outkey="8"/>
+										<entry name="author" outkey="17"/>
+										<entry name="price" outkey="18"/>
+										<entry name="pages" outkey="19"/>
+										<entry name="publisher" outkey="20"/>
+										<entry name="language" outkey="21"/>
+										<entry name="stars" outkey="22"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="Kindle_Book_Dataset.csv">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="Book" block="Rows">
+									<field0 name="url" type="string"/>
+									<field1 name="title" type="string"/>
+									<field2 name="author" type="string"/>
+									<field3 name="price" type="string"/>
+									<field4 name="save" type="string"/>
+									<field5 name="pages" type="string"/>
+									<field6 name="description" type="string"/>
+									<field7 name="size" type="string"/>
+									<field8 name="publisher" type="string"/>
+									<field9 name="language" type="string"/>
+									<field10 name="text_to_speech" type="string"/>
+									<field11 name="x_ray" type="string"/>
+									<field12 name="lending" type="string"/>
+									<field13 name="customer_reviews" type="string"/>
+									<field14 name="stars" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+				<component name="map_title" library="user" uid="17" kind="19" visible="0" blackbox="0">
+					<view ltx="445" lty="113" rbx="534" rby="130"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="value" inpkey="23" componentid="15"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="title" outkey="24" componentid="16"/>
+						</root>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="24">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="16">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="22">
+						<edges>
+							<edge vertexkey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="20">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="14"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="15"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="23"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="map_title" library="user" uid="11" inline="1" editable="1" blackbox="0">
+		<structure>
+			<children>
+				<component name="replace" library="lang" uid="12" kind="5">
+					<sources>
+						<datapoint pos="0" key="6"/>
+						<datapoint pos="1" key="5"/>
+						<datapoint pos="2" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="3"/>
+					</targets>
+					<view ltx="439" rbx="529" rby="69"/>
+				</component>
+				<component name="value" library="core" uid="15" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="7"/>
+					</targets>
+					<view rbx="75" rby="37"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="value"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="13" kind="2">
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="229" lty="35" rbx="339" rby="51"/>
+					<data>
+						<constant value="[Kindle Edition]" datatype="string"/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="14" kind="2">
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="350" lty="53" rbx="390" rby="69"/>
+					<data>
+						<constant datatype="string"/>
+					</data>
+				</component>
+				<component name="title" library="core" uid="16" kind="7">
+					<sources>
+						<datapoint pos="0" key="8"/>
+					</sources>
+					<view ltx="635" lty="14" rbx="679" rby="51"/>
+					<data>
+						<output datatype="string"/>
+						<parameter usageKind="output" name="title"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="7">
+						<edges>
+							<edge vertexkey="6"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

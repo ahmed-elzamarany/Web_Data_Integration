@@ -1,0 +1,41 @@
+<books>
+	<book>
+		<id>book1</id>
+		<isbn>098765432x</isbn>
+		<title>bookTtitle</title>
+		<authors> 
+			<author>
+				<name>author</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>0</pages>
+		<year>1000</year>
+		<publisher>xyz</publisher>
+		<genres>
+				<genre_type>comedy</genre_type>
+			
+		</genres>
+		<price>15</price>
+		<language> english </language>
+	</book>
+	<book>
+		<id>book2</id>
+		<isbn>198765432z</isbn>
+		<title>bookTtitle2</title>
+		<authors> 
+			<author>
+				<name>author2</name>
+			</author>
+		</authors>
+		<rating>4</rating>
+		<pages>0</pages>
+		<year>1000</year>
+		<publisher>xyz</publisher>
+		<genres>
+			<genre_type>comedy</genre_type>
+		</genres>
+		<price>15</price>
+		<language> english </language>
+	</book>
+</books>

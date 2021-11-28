@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2021r3 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="target" library="xml" uid="4" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="669" lty="52" rbx="903" rby="339"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="books" expanded="1">
+										<entry name="book" inpkey="10" expanded="1">
+											<entry name="title" inpkey="12"/>
+											<entry name="authors" expanded="1">
+												<entry name="author" expanded="1">
+													<entry name="name" inpkey="13"/>
+												</entry>
+											</entry>
+											<entry name="year" inpkey="9"/>
+											<entry name="publisher" inpkey="14"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="target.xsd" instanceroot="{}books" inputinstance="target.xml" outputinstance="target.xml"/>
+					</data>
+				</component>
+				<component name="year_map" library="user" uid="15" kind="19" visible="0" blackbox="0">
+					<view ltx="457" lty="177" rbx="567" rby="194"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="valuetrue" inpkey="20" componentid="13"/>
+						</root>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+								</namespaces>
+							</header>
+							<entry name="year" outkey="21" componentid="14"/>
+						</root>
+					</data>
+				</component>
+				<component name="Books_recomm" library="text" uid="3" kind="16">
+					<properties/>
+					<view ltx="-24" lty="52" rbx="348" rby="322"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1">
+									<entry name="Rows" outkey="15" expanded="1">
+										<entry name="Book-Title" outkey="17"/>
+										<entry name="Book-Author" outkey="18"/>
+										<entry name="Year-Of-Publication" outkey="8"/>
+										<entry name="Publisher" outkey="19"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<text type="csv" encoding="1000" byteorder="1" byteordermark="0" inputinstance="..\Datasets\Books_recomm.csv">
+							<settings separator="," quote="&quot;" firstrownames="true" removeempty="true">
+								<names root="Books_recomm" block="Rows">
+									<field0 name="ISBN" type="string"/>
+									<field1 name="Book-Title" type="string"/>
+									<field2 name="Book-Author" type="string"/>
+									<field3 name="Year-Of-Publication" type="string"/>
+									<field4 name="Publisher" type="string"/>
+									<field5 name="Image-URL-S" type="string"/>
+									<field6 name="Image-URL-M" type="string"/>
+									<field7 name="Image-URL-L" type="string"/>
+								</names>
+							</settings>
+						</text>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="21">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="15">
+						<edges>
+							<edge vertexkey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="17">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="18">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="19">
+						<edges>
+							<edge vertexkey="14"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="20"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+	<component name="year_map" library="user" uid="9" inline="1" editable="1" blackbox="0">
+		<description>
+			<long>there was a problem with an entry that had text in the year field</long>
+		</description>
+		<structure>
+			<children>
+				<component name="numeric" library="lang" uid="10" kind="5">
+					<sources>
+						<datapoint pos="0" key="5"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="6"/>
+					</targets>
+					<view ltx="315" rbx="384" rby="37"/>
+				</component>
+				<component name="if-else" library="core" uid="11" kind="4">
+					<sources>
+						<datapoint pos="0" key="7"/>
+						<datapoint pos="1" key="3"/>
+						<datapoint pos="2" key="2"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="4"/>
+					</targets>
+					<view ltx="411" lty="18" rbx="505" rby="89"/>
+				</component>
+				<component name="constant" library="core" uid="12" kind="2">
+					<targets>
+						<datapoint pos="0" key="1"/>
+					</targets>
+					<view ltx="300" lty="96" rbx="338" rby="112"/>
+					<data>
+						<constant value="0" datatype="decimal"/>
+					</data>
+				</component>
+				<component name="valuetrue" library="core" uid="13" kind="6">
+					<sources>
+						<datapoint/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="8"/>
+					</targets>
+					<view rbx="94" rby="37"/>
+					<data>
+						<input datatype="string"/>
+						<parameter usageKind="input" name="valuetrue"/>
+					</data>
+				</component>
+				<component name="year" library="core" uid="14" kind="7">
+					<sources>
+						<datapoint pos="0" key="9"/>
+					</sources>
+					<view ltx="605" rbx="651" rby="37"/>
+					<data>
+						<output datatype="anyType"/>
+						<parameter usageKind="output" name="year"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="8">
+						<edges>
+							<edge vertexkey="3"/>
+							<edge vertexkey="5"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>
