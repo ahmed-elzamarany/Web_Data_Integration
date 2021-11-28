@@ -53,7 +53,7 @@ An overview of the datasets and the count of nulls/attributes will be found in t
 The Data Translation was done using Altova mapfore2021 software. The files can be found in [the Data Translation folder](DT).
 
 ### 3- Cleaning the data:
-The data was cleaned and examined for duplicates. The nulls in Authors were dropped. More detailes are in [Cleaning.ipynb.ipynb](Notebooks/Cleaning.ipynb).
+The data was cleaned and examined for duplicates. The nulls in Authors were dropped. More detailes are in [Cleaning.ipynb](Notebooks/Cleaning.ipynb).
 
 ### 4- Creating the gold standard between each 2 datasets
 In order to create the gold standard by hand, a mixed work between python and manualy looking into the data was used. More details can be found in the [Creating_GS.ipynb](Notebooks/Creating_GS.ipynb)
