@@ -23,7 +23,7 @@ This dataset contains 271360 entities.
 8 attributes are included in the target schema: title, authors, rating, pages, year, publisher, genres, price.
 
 Example of the target schema in xml format:
-
+```xml
 <book>
 		<id>book1</id>
 		<isbn>098765432x</isbn>
@@ -42,7 +42,7 @@ Example of the target schema in xml format:
 		</genres>
 		<price>15</price>
 		<language> english </language>
-	</book>
+	</book>```
 
 ## Files description/ Pipline
 
