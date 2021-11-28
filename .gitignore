@@ -7,8 +7,21 @@
 # BlueJ files
 *.ctxt
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+
+# Intellij
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+*.iws
+ 
+# Mac
+.DS_Store
+ 
+# Maven
+log/
+target/
 
 # Package Files #
 *.jar
