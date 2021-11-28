@@ -26,7 +26,6 @@ Example of the target schema in xml format:
 ```xml
 <book>
 		<id>book1</id>
-		<isbn>098765432x</isbn>
 		<title>bookTtitle</title>
 		<authors> 
 			<author>
