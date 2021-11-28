@@ -62,7 +62,7 @@ In order to create the gold standard by hand, a mixed work between python and ma
 With the help of winter framework in java, the identity resolution was created and evaluted with the gold standard. The work is included in [the Java project](IR_DF/IR_DF_Books/src/main/java/de/unimannheim/wdi/identity_resolution)
 
 ### 6- Creating the unified gold standard
-The gold standard was created using the correspondences from the identity resolution and going manualy through the data. More details can be found in the [GSxml.ipynb.ipynb](Notebooks/GSxml.ipynb)
+The gold standard was created using the correspondences from the identity resolution and going manualy through the data. More details can be found in the [GSxml.ipynb](Notebooks/GSxml.ipynb)
 
 ### 7- Data Fusion
 With the help of winter framework in java, the 3 datasets were merged into a single xml file and evaluted with the gold standard. The work is included in [the Java project](IR_DF/IR_DF_Books/src/main/java/de/unimannheim/wdi/data_fusion)
