@@ -1,6 +1,7 @@
 package de.unimannheim.wdi.data_fusion;
 
 import java.io.File;
+import java.util.Iterator;
 import java.util.Locale;
 
 import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
@@ -15,16 +16,27 @@ import de.uni_mannheim.informatik.dws.winter.model.RecordGroupFactory;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.unimannheim.wdi.evaluation.AuthorsEvaluationRule;
+import de.unimannheim.wdi.evaluation.GenresEvaluationRule;
+import de.unimannheim.wdi.evaluation.PagesEvaluationRule;
+import de.unimannheim.wdi.evaluation.PriceEvaluationRule;
 import de.unimannheim.wdi.evaluation.PublisherEvaluationRule;
+import de.unimannheim.wdi.evaluation.RatingEvaluationRule;
 import de.unimannheim.wdi.evaluation.TitleEvaluationRule;
+import de.unimannheim.wdi.evaluation.YearEvaluationRule;
 import de.unimannheim.wdi.fusers.AuthorsFuserIntersection;
 import de.unimannheim.wdi.fusers.AuthorsFuserMostRecent;
 import de.unimannheim.wdi.fusers.AuthorsFuserUnion;
+import de.unimannheim.wdi.fusers.GenresFuserIntersection;
+import de.unimannheim.wdi.fusers.PagesFuserFavorSource;
+import de.unimannheim.wdi.fusers.PriceFuserLowestPrice;
 import de.unimannheim.wdi.fusers.PublisherFuserLongestString;
+import de.unimannheim.wdi.fusers.RatingsFuserFavorSource;
 import de.unimannheim.wdi.model.BookXMLFormatter;
 import de.unimannheim.wdi.model.BookXMLReader;
 import de.unimannheim.wdi.model.Books;
-import de.unimannheim.wdi.solution.TitleFuserLongestString;
+import de.unimannheim.wdi.fusers.TitleFuserLongestString;
+import de.unimannheim.wdi.fusers.YearFuserRecentYear;
+
 import org.slf4j.Logger;
 
 public class DataFusion_Main 
@@ -44,6 +56,10 @@ public class DataFusion_Main
 
 	private static final Logger logger = WinterLogManager.activateLogger("default");
 	
+    /**
+     * @param args
+     * @throws Exception
+     */
     public static void main( String[] args ) throws Exception
     {
 		// Load the Data into FusibleDataSet
@@ -62,22 +78,10 @@ public class DataFusion_Main
 
 		// Maintain Provenance
 		// Scores (e.g. from rating)
-		ds1.setScore(3.0);
+		ds1.setScore(2.0);
 		ds2.setScore(1.0);
-		ds3.setScore(2.0);
+		ds3.setScore(3.0);
 		
-		// Date (e.g. last update)
-//		DateTimeFormatter formatter = new DateTimeFormatterBuilder()
-//		        .appendPattern("yyyy-MM-dd")
-//		        .parseDefaulting(ChronoField.CLOCK_HOUR_OF_DAY, 0)
-//		        .parseDefaulting(ChronoField.MINUTE_OF_HOUR, 0)
-//		        .parseDefaulting(ChronoField.SECOND_OF_MINUTE, 0)
-//		        .toFormatter(Locale.ENGLISH);
-//
-//		ds1.setDate(LocalDateTime.parse("2012-01-01", formatter));
-//		ds2.setDate(LocalDateTime.parse("2010-01-01", formatter));
-//		ds3.setDate(LocalDateTime.parse("2008-01-01", formatter));
-
 		// load correspondences
 		logger.info("*\tLoading correspondences\t*");
 		CorrespondenceSet<Books, Attribute> correspondences = new CorrespondenceSet<>();
@@ -102,6 +106,11 @@ public class DataFusion_Main
 		strategy.addAttributeFuser(Books.TITLE, new TitleFuserLongestString(),new TitleEvaluationRule());
 		strategy.addAttributeFuser(Books.PUBLISHER,new PublisherFuserLongestString(), new PublisherEvaluationRule());
 		strategy.addAttributeFuser(Books.AUTHORS,new AuthorsFuserUnion(),new AuthorsEvaluationRule());
+		strategy.addAttributeFuser(Books.RATING,new RatingsFuserFavorSource(),new RatingEvaluationRule());
+		strategy.addAttributeFuser(Books.PAGES,new PagesFuserFavorSource(),new PagesEvaluationRule());
+		strategy.addAttributeFuser(Books.PRICE,new PriceFuserLowestPrice(),new PriceEvaluationRule());
+		strategy.addAttributeFuser(Books.YEAR,new YearFuserRecentYear(),new YearEvaluationRule());
+		strategy.addAttributeFuser(Books.GENRES,new GenresFuserIntersection(),new GenresEvaluationRule());
 		
 		// create the fusion engine
 		DataFusionEngine<Books, Attribute> engine = new DataFusionEngine<Books, Attribute>(strategy);
@@ -123,6 +132,7 @@ public class DataFusion_Main
 		double accuracy = evaluator.evaluate(fusedDataSet, gs, null);
 
 		logger.info(String.format("Accuracy: %.2f", accuracy));
+		
     }
     
     

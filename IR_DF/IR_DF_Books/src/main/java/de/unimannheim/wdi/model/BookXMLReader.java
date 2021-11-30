@@ -16,7 +16,8 @@ import de.uni_mannheim.informatik.dws.winter.model.FusibleFactory;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader;
-import org.apache.commons.lang3.StringUtils;
+
+import org.apache.commons.lang.StringUtils;
 import org.w3c.dom.Node;
 
 import java.util.Collections;
@@ -29,8 +30,7 @@ import java.util.List;
  * @author Oliver Lehmberg (oli@dwslab.de)
  * 
  */
-public class BookXMLReader extends XMLMatchableReader<Books, Attribute>  implements
-		FusibleFactory<Books, Attribute> {
+public class BookXMLReader extends XMLMatchableReader<Books, Attribute> implements FusibleFactory<Books, Attribute>  {
 
 	/* (non-Javadoc)
 	 * @see de.uni_mannheim.informatik.wdi.model.io.XMLMatchableReader#initialiseDataset(de.uni_mannheim.informatik.wdi.model.DataSet)
@@ -38,13 +38,18 @@ public class BookXMLReader extends XMLMatchableReader<Books, Attribute>  impleme
 	@Override
 	protected void initialiseDataset(DataSet<Books, Attribute> dataset) {
 		super.initialiseDataset(dataset);
-
-// the schema is defined in the Books class and not interpreted from the file, so we have to set the attributes manually
+		
+		// the schema is defined in the Movie class and not interpreted from the file, so we have to set the attributes manually
 		dataset.addAttribute(Books.TITLE);
-		dataset.addAttribute(Books.PUBLISHER);
-		dataset.addAttribute(Books.YEAR);
 		dataset.addAttribute(Books.AUTHORS);
-
+		dataset.addAttribute(Books.RATING);
+		dataset.addAttribute(Books.PAGES);
+		dataset.addAttribute(Books.PRICE);
+		dataset.addAttribute(Books.LANGUAGE);
+		dataset.addAttribute(Books.ISBN);
+		dataset.addAttribute(Books.YEAR);
+		dataset.addAttribute(Books.PUBLISHER);
+		dataset.addAttribute(Books.GENRES);
 	}
 	
 	@Override
@@ -55,37 +60,44 @@ public class BookXMLReader extends XMLMatchableReader<Books, Attribute>  impleme
 		Books book = new Books(id, provenanceInfo);
 
 		// fill the attributes
+		// TODO  also parses non-int values
 		book.setTitle(getValueFromChildElement(node, "title"));
+		book.setRating(getValueFromChildElement(node, "rating"));
+		book.setPages(getValueFromChildElement(node, "pages"));
+		book.setPrice(getValueFromChildElement(node, "price"));
+		book.setLanguage(getValueFromChildElement(node, "language"));
 		book.setPublisher(getValueFromChildElement(node, "publisher"));
-		try {
-			String pages = getValueFromChildElement(node, "pages");
-			if (pages != null && !pages.isEmpty()) {
-				book.setPages(Integer.parseInt(pages));
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		book.setIsbn(getValueFromChildElement(node, "isbn"));
+		book.setYear(getValueFromChildElement(node, "year"));
+		book.setGenres(getListFromChildElement(node, "genres"));
+		
 
-		// load the list of actors
-		List<Author> actors = getObjectListFromChildElement(node, "authors",
+		// load the list of authors
+		List<Author> authors = getObjectListFromChildElement(node, "authors",
 				"author", new AuthorXMLReader(), provenanceInfo);
-		book.setAuthors(actors);
+		book.setAuthors(authors);
 
+		
 		return book;
 	}
+
 	@Override
 	public Books createInstanceForFusion(RecordGroup<Books, Attribute> cluster) {
-
 		List<String> ids = new LinkedList<>();
-
-		for (Books m : cluster.getRecords()) {
-			ids.add(m.getIdentifier());
+		
+		// collect the ids of all records that are fused in this group
+		for (Books b : cluster.getRecords()) {
+			ids.add(b.getIdentifier());
 		}
-
+		
+		// sort and merge the ids to create an id for the fused record
 		Collections.sort(ids);
-
+		
 		String mergedId = StringUtils.join(ids, '+');
-
+		
+		// create the new fused record
 		return new Books(mergedId, "fused");
+		
 	}
+
 }

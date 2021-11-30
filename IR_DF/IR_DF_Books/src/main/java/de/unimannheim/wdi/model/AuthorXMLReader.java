@@ -14,9 +14,6 @@ package de.unimannheim.wdi.model;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader;
 import org.w3c.dom.Node;
-
-import java.util.Locale;
-
 /**
  * A {@link XMLMatchableReader} for {@link Author}s.
  * 
