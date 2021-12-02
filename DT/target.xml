@@ -1,7 +1,6 @@
 <books>
 	<book>
 		<id>book1</id>
-		<isbn>098765432x</isbn>
 		<title>bookTtitle</title>
 		<authors> 
 			<author>
@@ -21,7 +20,6 @@
 	</book>
 	<book>
 		<id>book2</id>
-		<isbn>198765432z</isbn>
 		<title>bookTtitle2</title>
 		<authors> 
 			<author>

@@ -17,14 +17,10 @@ import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 import de.unimannheim.wdi.evaluation.AuthorsEvaluationRule;
 import de.unimannheim.wdi.evaluation.PublisherEvaluationRule;
 import de.unimannheim.wdi.evaluation.TitleEvaluationRule;
-import de.unimannheim.wdi.fusers.AuthorsFuserIntersection;
-import de.unimannheim.wdi.fusers.AuthorsFuserMostRecent;
-import de.unimannheim.wdi.fusers.AuthorsFuserUnion;
-import de.unimannheim.wdi.fusers.PublisherFuserLongestString;
+import de.unimannheim.wdi.fusers.*;
 import de.unimannheim.wdi.model.BookXMLFormatter;
 import de.unimannheim.wdi.model.BookXMLReader;
 import de.unimannheim.wdi.model.Books;
-import de.unimannheim.wdi.solution.TitleFuserLongestString;
 import org.slf4j.Logger;
 
 public class DataFusion_Main 

@@ -115,34 +115,34 @@ public class IR_using_linear_combination
     {
 
     	// Over all, the compartores proved better if they are lower cased
-		String rk1=IR("recommendation","kindle",new Comparator[]{new BookTitleComparatorEqual(),new BookAuthorComparatorLevenshtein(), new BookPublisherComparatorLevenshtein()}, new double[]{0.2, 0.2, 0.6});
-//		String rk2=IR("recommendation","kindle",new Comparator[]{new BookTitleComparatorEqual(),new BookAuthorComparatorLevenshtein(), new BookPublisherComparatorLevenshtein()}, new double[]{0.5, 0.3, 0.2});
-//		String rk3=IR("recommendation","kindle",new Comparator[]{new BookTitleComparatorEqual(),new BookAuthorComparatorJaccard(), new BookPublisherComparatorJaccard()}, new double[]{0.2, 0.2, 0.6});
+//		String rk1=IR("recommendation","kindle",new Comparator[]{new BookTitleComparatorEqual(),new BookAuthorComparatorLevenshtein(), new BookPublisherComparatorLevenshtein()}, new double[]{0.5, 0.2, 0.3});//  Precision: 0.6188 Recall: 1.0000 F1: 0.7646
+		String rk2=IR("recommendation","kindle",new Comparator[]{new BookTitleComparatorEqual(),new BookAuthorComparatorLevenshtein(), new BookPublisherComparatorLevenshtein()}, new double[]{0.4, 0.2, 0.4}); // Precision: 0.9725 Recall: 0.8023 F1: 0.8792
+//		String rk3=IR("recommendation","kindle",new Comparator[]{new BookTitleComparatorEqual(),new BookAuthorComparatorJaccard(), new BookPublisherComparatorJaccard()}, new double[]{0.2, 0.2, 0.6}); //  Precision: 0.9942 Recall: 0.7841 F1: 0.8767
 //
 //		System.out.println(rk1);
 //		System.out.println(rk2);
 //		System.out.println(rk3);
 
-		// We can see the best for recommendation and kindle datasets is while using these comparators with these wights {BookTitleComparatorEqual 0.2, BookAuthorComparatorLevenshtein 0.2, BookPublisherComparatorLevenshtein, 0.6]
+		// We can see the best for recommendation and kindle datasets is while using these comparators with these wights {BookTitleComparatorEqual 0.4, BookAuthorComparatorLevenshtein 0.2, BookPublisherComparatorLevenshtein, 0.4]
 
 
-//		String gk1=IR("goodreads","kindle",new Comparator[]{new BookTitleComparatorEqual(), new BookAuthorComparatorJaccard(),new BookPageComparator50Page()}, new double[]{0.4, 0.4,0.2});
-		String gk2=IR("goodreads","kindle",new Comparator[]{new BookTitleComparatorEqual(), new BookAuthorComparatorLevenshtein(),new BookPageComparator50Page()}, new double[]{0.4, 0.5,0.1});
-//		String gk3=IR("goodreads","kindle",new Comparator[]{new BookTitleComparatorEqual(), new BookAuthorComparatorLevenshtein(),new BookPageComparator100Page()}, new double[]{0.6, 0.2,0.2});
-//
+//		String gk1=IR("goodreads","kindle",new Comparator[]{new BookTitleComparatorEqual(), new BookAuthorComparatorJaccard(),new BookPageComparator100Page()}, new double[]{0.6, 0.2,0.2}); // Precision: 0.6809 Recall: 0.9940 F1: 0.8082
+//		String gk2=IR("goodreads","kindle",new Comparator[]{new BookTitleComparatorEqual(), new BookAuthorComparatorLevenshtein(),new BookPageComparator100Page()}, new double[]{0.7, 0.2,0.1}); // Precision: 0.3696 Recall: 1.0000 F1: 0.5397
+		String gk3=IR("goodreads","kindle",new Comparator[]{new BookTitleComparatorEqual(), new BookAuthorComparatorLevenshtein(),new BookPageComparator50Page()}, new double[]{0.5, 0.4,0.1}); // Precision: 0.9878 Recall: 0.9819 F1: 0.9848
+
 //		System.out.println(gk1);
 //		System.out.println(gk2);
 //		System.out.println(gk3);
 
-		// We can see the best for goodreads and kindle datasets is while using these comparators with these wights {BookTitleComparatorEqual 0.4, BookAuthorComparatorLevenshtein 0.5, BookPageComparator50Page, 0.1]
-//		String rg1=IR("recommendation","goodreads",new Comparator[]{new BookTitleComparatorEqual(), new BookAuthorComparatorJaccard()}, new double[]{0.3, 0.7});
-		String rg2=IR("recommendation","goodreads",new Comparator[]{new BookTitleComparatorEqual(), new BookAuthorComparatorLevenshtein()}, new double[]{0.5, 0.5});
-//		String rg3=IR("recommendation","goodreads",new Comparator[]{new BookTitleComparatorEqual(), new BookAuthorComparatorLevenshtein()}, new double[]{0.8, 0.2});
+		// We can see the best for goodreads and kindle datasets is while using these comparators with these wights {BookTitleComparatorEqual 0.5, BookAuthorComparatorLevenshtein 0.4, BookPageComparator50Page, 0.1]
+//		String rg1=IR("recommendation","goodreads",new Comparator[]{new BookTitleComparatorEqual(), new BookAuthorComparatorJaccard()}, new double[]{0.5, 0.5});//  Precision: 0.9331 Recall: 0.8040 F1: 0.8637
+//		String rg2=IR("recommendation","goodreads",new Comparator[]{new BookTitleComparatorEqual(), new BookAuthorComparatorLevenshtein()}, new double[]{0.7, 0.3});//  Precision: 0.3648 Recall: 1.0000 F1: 0.5346
+		String rg3=IR("recommendation","goodreads",new Comparator[]{new BookTitleComparatorEqual(), new BookAuthorComparatorLevenshtein()}, new double[]{0.6, 0.4}); // Precision: 0.9501 Recall: 0.9094 F1: 0.9293
 
 //		System.out.println(rg1);
 //		System.out.println(rg2);
 //		System.out.println(rg3);
-		// We can see the best for goodreads and recommendation datasets is while using these comparators with these wights {BookTitleComparatorEqual 0.5, BookAuthorComparatorLevenshtein 0.5]
+		// We can see the best for goodreads and recommendation datasets is while using these comparators with these wights {BookTitleComparatorEqual 0.6, BookAuthorComparatorLevenshtein 0.4]
 
 	}
 }
