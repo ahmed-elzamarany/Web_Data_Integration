@@ -20,6 +20,7 @@ import de.unimannheim.wdi.evaluation.GenresEvaluationRule;
 import de.unimannheim.wdi.evaluation.PagesEvaluationRule;
 import de.unimannheim.wdi.evaluation.PriceEvaluationRule;
 import de.unimannheim.wdi.evaluation.PublisherEvaluationRule;
+import de.unimannheim.wdi.evaluation.PublishingEvaluationRule;
 import de.unimannheim.wdi.evaluation.RatingEvaluationRule;
 import de.unimannheim.wdi.evaluation.TitleEvaluationRule;
 import de.unimannheim.wdi.evaluation.YearEvaluationRule;
@@ -30,6 +31,7 @@ import de.unimannheim.wdi.fusers.GenresFuserIntersection;
 import de.unimannheim.wdi.fusers.PagesFuserFavorSource;
 import de.unimannheim.wdi.fusers.PriceFuserLowestPrice;
 import de.unimannheim.wdi.fusers.PublisherFuserLongestString;
+import de.unimannheim.wdi.fusers.PublishingFuserMostRecentEdition;
 import de.unimannheim.wdi.fusers.RatingsFuserFavorSource;
 import de.unimannheim.wdi.model.BookXMLFormatter;
 import de.unimannheim.wdi.model.BookXMLReader;
@@ -105,6 +107,7 @@ public class DataFusion_Main
 		// add attribute fusers
 		strategy.addAttributeFuser(Books.TITLE, new TitleFuserLongestString(),new TitleEvaluationRule());
 		strategy.addAttributeFuser(Books.PUBLISHER,new PublisherFuserLongestString(), new PublisherEvaluationRule());
+		strategy.addAttributeFuser(Books.PUBLISHING,new PublishingFuserMostRecentEdition(), new PublishingEvaluationRule());
 		strategy.addAttributeFuser(Books.AUTHORS,new AuthorsFuserUnion(),new AuthorsEvaluationRule());
 		strategy.addAttributeFuser(Books.RATING,new RatingsFuserFavorSource(),new RatingEvaluationRule());
 		strategy.addAttributeFuser(Books.PAGES,new PagesFuserFavorSource(),new PagesEvaluationRule());

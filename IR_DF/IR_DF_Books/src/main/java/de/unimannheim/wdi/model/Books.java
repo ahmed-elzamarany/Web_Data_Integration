@@ -30,6 +30,7 @@ public class Books extends AbstractRecord<Attribute> implements Serializable {
     private String year;
     private String publisher;
     private List<String> genres;
+    private Publishing publishing;
 
 
     public String getIsbn() {
@@ -118,6 +119,21 @@ public class Books extends AbstractRecord<Attribute> implements Serializable {
 		this.genres = genres;
 	}
 	
+	public Publishing getPublishing() {
+		if (this.publishing==null) {
+			Publishing testPub = new Publishing("", "");
+			testPub.setYear("");
+			testPub.setPublisher("");
+			
+			return testPub;
+		}
+		return this.publishing;
+	}
+	
+	public void setPublishing(Publishing publishing) {
+		this.publishing = publishing;
+	}
+	
 
 	private Map<Attribute, Collection<String>> provenance = new HashMap<>();
 	private Collection<String> recordProvenance;
@@ -159,6 +175,7 @@ public class Books extends AbstractRecord<Attribute> implements Serializable {
 	public static final Attribute LANGUAGE = new Attribute("Language");
 	public static final Attribute YEAR = new Attribute("Year");
 	public static final Attribute PUBLISHER = new Attribute("Publisher");
+	public static final Attribute PUBLISHING = new Attribute("Publishing");
 	public static final Attribute GENRES = new Attribute("Genres");
 	
 	
@@ -184,6 +201,8 @@ public class Books extends AbstractRecord<Attribute> implements Serializable {
 			return getYear() != null && !getYear().isEmpty();
 		else if(attribute==PUBLISHER)
 			return getPublisher() != null && !getPublisher().isEmpty();
+		else if(attribute==PUBLISHING)
+			return getPublishing() != null && getPublishing().getYear() != null && getPublishing().getPublisher() != null && !getPublishing().getPublisher().isEmpty() && !getPublishing().getYear().isEmpty();
 		else
 			return false;
 	}

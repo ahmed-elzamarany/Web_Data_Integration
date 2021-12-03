@@ -50,6 +50,7 @@ public class BookXMLReader extends XMLMatchableReader<Books, Attribute> implemen
 		dataset.addAttribute(Books.YEAR);
 		dataset.addAttribute(Books.PUBLISHER);
 		dataset.addAttribute(Books.GENRES);
+		dataset.addAttribute(Books.PUBLISHING);
 	}
 	
 	@Override
@@ -71,12 +72,17 @@ public class BookXMLReader extends XMLMatchableReader<Books, Attribute> implemen
 		book.setYear(getValueFromChildElement(node, "year"));
 		book.setGenres(getListFromChildElement(node, "genres"));
 		
+		Publishing pub = new Publishing(id, provenanceInfo);
+		pub.setPublisher(getValueFromChildElement(node, "publisher"));
+		pub.setYear(getValueFromChildElement(node, "year"));
+		book.setPublishing(pub);
+		
+		//System.out.println(book.getPublishing().getYear() + " ---- " + book.getPublishing().getPublisher());
 
 		// load the list of authors
 		List<Author> authors = getObjectListFromChildElement(node, "authors",
 				"author", new AuthorXMLReader(), provenanceInfo);
 		book.setAuthors(authors);
-
 		
 		return book;
 	}

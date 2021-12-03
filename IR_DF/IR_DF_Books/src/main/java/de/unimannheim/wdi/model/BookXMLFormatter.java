@@ -39,13 +39,7 @@ public class BookXMLFormatter extends XMLFormatter<Books> {
 		book.appendChild(createTextElementWithProvenance("title",
 				record.getTitle(),
 				record.getMergedAttributeProvenance(Books.TITLE), doc));
-		book.appendChild(createTextElementWithProvenance("publisher",
-				record.getPublisher(),
-				record.getMergedAttributeProvenance(Books.PUBLISHER), doc));
-		book.appendChild(createTextElementWithProvenance("year", record
-				.getYear(), record
-				.getMergedAttributeProvenance(Books.YEAR), doc));
-		
+
 		book.appendChild(createTextElementWithProvenance("rating",
 				record.getRating(),
 				record.getMergedAttributeProvenance(Books.RATING), doc));
@@ -57,6 +51,46 @@ public class BookXMLFormatter extends XMLFormatter<Books> {
 		book.appendChild(createTextElementWithProvenance("price",
 				record.getPrice(),
 				record.getMergedAttributeProvenance(Books.PRICE), doc));
+		
+		if (record.getPublishing().getPublisher().equals("")) {
+			book.appendChild(createTextElementWithProvenance("publisher",
+					record.getPublisher(),
+					record.getMergedAttributeProvenance(Books.PUBLISHER), doc));
+		}
+		else {
+			book.appendChild(createTextElementWithProvenance("publisher",
+					record.getPublishing().getPublisher(),
+					record.getMergedAttributeProvenance(Books.PUBLISHING), doc));
+		}
+		
+		if (record.getPublishing().getYear().equals("")) {
+			book.appendChild(createTextElementWithProvenance("year", 
+					record.getYear(),
+					record.getMergedAttributeProvenance(Books.YEAR), doc));
+		}
+		else {
+			book.appendChild(createTextElementWithProvenance("year",
+					record.getPublishing().getYear(),
+					record.getMergedAttributeProvenance(Books.PUBLISHING), doc));
+		}
+		/*
+		
+		book.appendChild(createTextElementWithProvenance("publisherPublishing",
+				record.getPublishing().getPublisher(),
+				record.getMergedAttributeProvenance(Books.PUBLISHING), doc));
+		
+		book.appendChild(createTextElementWithProvenance("yearPublishing",
+				record.getPublishing().getYear(),
+				record.getMergedAttributeProvenance(Books.PUBLISHING), doc));
+		
+		book.appendChild(createTextElementWithProvenance("publisher",
+				record.getPublisher(),
+				record.getMergedAttributeProvenance(Books.PUBLISHER), doc));
+		book.appendChild(createTextElementWithProvenance("year", record
+				.getYear(), record
+				.getMergedAttributeProvenance(Books.YEAR), doc));
+		*/
+		
 		
 		book.appendChild(createAuthorsElement(record, doc));
 		book.appendChild(createGenresElement(record, doc));
