@@ -1,5 +1,6 @@
 package de.unimannheim.wdi.identity_resolution;
 
+import de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet;
 import de.uni_mannheim.informatik.dws.winter.matching.algorithms.RuleLearner;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.WekaMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.comparators.Comparator;
@@ -127,42 +128,6 @@ public class IR_Main
 		gsTest.loadFromCSVFile(new File(
 				"data/goldstandard/ML/gs_"+name1+"_"+name2+"_test.csv"));
 
-//		// load the gold standard (test set)
-//		logger.info("*\tLoading gold standard\t*");
-//		MatchingGoldStandard gsTest = new MatchingGoldStandard();
-//		gsTest.loadFromCSVFile(new File("data/goldstandard/gs_"+name1+"_"+name2+".csv"));
-// Set class to last attribute
-//
-//				DataSource source = new DataSource("/some/where/data.csv");
-//				Instances data = source.getDataSet();
-//		if (data.classIndex() == -1)
-//			data.setClassIndex(data.numAttributes() - 1);
-//
-//// use StratifiedRemoveFolds to randomly split the data
-//		StratifiedRemoveFolds filter = new StratifiedRemoveFolds();
-//
-//// set options for creating the subset of data
-//		String[] options = new String[6];
-//
-//		options[0] = "-N";                 // indicate we want to set the number of folds
-//		options[1] = Integer.toString(2);  // split the data into five random folds
-//		options[2] = "-F";                 // indicate we want to select a specific fold
-//		options[3] = Integer.toString(1);  // select the first fold
-//		options[4] = "-S";                 // indicate we want to set the random seed
-//		options[5] = Integer.toString(1);  // set the random seed to 1
-//
-//		filter.setOptions(options);        // set the filter options
-//		filter.setInputFormat(data);       // prepare the filter for the data format
-//		filter.setInvertSelection(false);  // do not invert the selection
-//
-//// apply filter for test data here
-//		Instances test = Filter.useFilter(data, filter);
-//
-////  prepare and apply filter for training data here
-//		filter.setInvertSelection(true);     // invert the selection to get other data
-//		Instances train = Filter.useFilter(data, filter);
-
-
 		// create a matching rule
 		String options[] = new String[] { "-S" };
 		WekaMatchingRule<Books, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
@@ -226,7 +191,7 @@ public class IR_Main
 		String rkMLs=IR_using_machine_learning("recommendation","kindle","SimpleLogistic");
 		String rkMLj=IR_using_machine_learning("recommendation","kindle","J48");
 		String rk1=IR_using_linear_combination("recommendation","kindle",
-				new Comparator[]{new BookTitleComparatorEqual(),new BookAuthorComparatorLevenshtein(), new BookPublisherComparatorLevenshtein()},
+				new Comparator[]{new BookTitleComparatorEqual(),new BookAuthorComparatorLevenshtein(), new BookPublisherComparatorJaccard()},
 				new double[]{0.5, 0.2, 0.3});//  Precision: 0.6188 Recall: 1.0000 F1: 0.7646
 		String rk2= IR_using_linear_combination("recommendation","kindle",
 				new Comparator[]{new BookTitleComparatorEqual(),new BookAuthorComparatorLevenshtein(), new BookPublisherComparatorLevenshtein()},
@@ -266,7 +231,7 @@ public class IR_Main
 		System.out.println("------------------------recommendation and kindle--------------------------------");
 		System.out.println("ML ,SimpleLogistic :" +rkMLs);
 		System.out.println("ML ,J48 :" +rkMLj);
-		System.out.println("L 0.5 BookTitleComparatorEqual, 0.2 BookAuthorComparatorLevenshtein, 0.3 BookPublisherComparatorLevenshtein :"+rk1);
+		System.out.println("L 0.5 BookTitleComparatorEqual, 0.2 BookAuthorComparatorLevenshtein, 0.3 BookPublisherComparatorJaccard :"+rk1);
 		System.out.println("L 0.4BookTitleComparatorEqual, 0.2 BookAuthorComparatorLevenshtein, 0.4 BookPublisherComparatorLevenshtein :"+rk2);
 		System.out.println("L 0.2 BookTitleComparatorEqual, 0.2 BookAuthorComparatorJaccard, 0.6 BookPublisherComparatorJaccard :"+rk3);
 		System.out.println("------------------------goodreads and kindle--------------------------------");
