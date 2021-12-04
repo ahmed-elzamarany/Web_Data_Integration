@@ -57,6 +57,7 @@ The data was cleaned and examined for duplicates. The nulls in Authors were drop
 
 ### 3- Creating the gold standard between each 2 datasets
 In order to create the gold standard by hand, a mixed work between python and manualy looking into the data was used. More details can be found in the [Creating_GS.ipynb](Notebooks/Creating_GS.ipynb)
+
 Note that by running this notebook, you will generate files like _goodreads_recommendation_H.csv_ which are meant to be examined by hand. These files aren't included in the repository.
 
 ### 4- Identity Resolution
