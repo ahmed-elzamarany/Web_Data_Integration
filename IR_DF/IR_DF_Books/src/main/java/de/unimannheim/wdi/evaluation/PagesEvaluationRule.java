@@ -30,22 +30,49 @@ public class PagesEvaluationRule extends EvaluationRule<Books, Attribute> {
 
 	@Override
 	public boolean isEqual(Books record1, Books record2, Attribute schemaElement) {
-		if(record1.getPages()== null && record2.getPages()==null)
+		if (record1.getPages() == null && record2.getPages() == null) {
 			return true;
-		else if(record1.getPages()== null ^ record2.getPages()==null)
+		} else if (record1.getPages() == null ^ record2.getPages() == null) {
 			return false;
-		else 
-			return record1.getPages().equals(record2.getPages());
+		} else {
+			try {
+				int pages1 = Integer.parseInt(record1.getPages());
+				int pages2 = Integer.parseInt(record2.getPages());
+
+				if (pages1 == pages2) {
+					return true;
+				} else if (pages1 > pages2) {
+					if (pages2 > pages1 - (pages1 / 10)) {
+						return true;
+					} else {
+						return false;
+					}
+				} else {
+					if (pages1 > pages2 - (pages2 / 10)) {
+						return true;
+					} else {
+						return false;
+					}
+				}
+			} catch (NumberFormatException e) {
+				return false;
+			}
+//			return record1.getPages().equals(record2.getPages());
+		}
+
 	}
 
-	/* (non-Javadoc)
-	 * @see de.uni_mannheim.informatik.wdi.datafusion.EvaluationRule#isEqual(java.lang.Object, java.lang.Object, de.uni_mannheim.informatik.wdi.model.Correspondence)
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * de.uni_mannheim.informatik.wdi.datafusion.EvaluationRule#isEqual(java.lang.
+	 * Object, java.lang.Object,
+	 * de.uni_mannheim.informatik.wdi.model.Correspondence)
 	 */
 	@Override
-	public boolean isEqual(Books record1, Books record2,
-			Correspondence<Attribute, Matchable> schemaCorrespondence) {
-		return isEqual(record1, record2, (Attribute)null);
+	public boolean isEqual(Books record1, Books record2, Correspondence<Attribute, Matchable> schemaCorrespondence) {
+		return isEqual(record1, record2, (Attribute) null);
 	}
-	
-	
+
 }
