@@ -43,18 +43,5 @@ public class BooksBlockingKeyByTitleGenerator extends
 			DataIterator<Pair<String, Books>> resultCollector) {
 		resultCollector.next(new Pair<>(record.getTitle(), record));
 	}
-//	public void generateBlockingKeys(Books record, Processable<Correspondence<Attribute, Matchable>> correspondences,
-//			DataIterator<Pair<String, Books>> resultCollector) {
-//
-//		String[] tokens  = record.getTitle().split("");
-//
-//		String blockingKeyValue = "";
-//
-//		for(int i = 0; i <= 2 && i < tokens.length; i++) {
-//			blockingKeyValue += tokens[i].substring(0, Math.min(2,tokens[i].length())).toUpperCase();
-//		}
-//
-//		resultCollector.next(new Pair<>(blockingKeyValue, record));
-//	}
 
 }

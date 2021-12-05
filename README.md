@@ -46,24 +46,26 @@ Example of the target schema in xml format:
 
 ## Files description/ Pipline
 
-### 1- Exploring the data: 
+### 0- Exploring the data: 
 An overview of the datasets and the count of nulls/attributes will be found in the [Exploring the data.ipynb](Notebooks/Exploring%20the%20data.ipynb).
 
-### 2- Data Translation: 
+### 1- Data Translation: 
 The Data Translation was done using Altova mapfore2021 software. The files can be found in [the Data Translation folder](DT).
 
-### 3- Cleaning the data:
+### 2- Cleaning the data:
 The data was cleaned and examined for duplicates. The nulls in Authors were dropped. More detailes are in [Cleaning.ipynb](Notebooks/Cleaning.ipynb).
 
-### 4- Creating the gold standard between each 2 datasets
+### 3- Creating the gold standard between each 2 datasets
 In order to create the gold standard by hand, a mixed work between python and manualy looking into the data was used. More details can be found in the [Creating_GS.ipynb](Notebooks/Creating_GS.ipynb)
 
-### 5- Identity Resolution
+Note that by running this notebook, you will generate files like _goodreads_recommendation_H.csv_ which are meant to be examined by hand. These files aren't included in the repository.
+
+### 4- Identity Resolution
 With the help of winter framework in java, the identity resolution was created and evaluted with the gold standard. The work is included in [the Java project](IR_DF/IR_DF_Books/src/main/java/de/unimannheim/wdi/identity_resolution)
 
-### 6- Creating the unified gold standard
+### 5- Creating the unified gold standard
 The gold standard was created using the correspondences from the identity resolution and going manualy through the data. More details can be found in the [GSxml.ipynb](Notebooks/GSxml.ipynb)
 
-### 7- Data Fusion
+### 6- Data Fusion
 With the help of winter framework in java, the 3 datasets were merged into a single xml file and evaluted with the gold standard. The work is included in [the Java project](IR_DF/IR_DF_Books/src/main/java/de/unimannheim/wdi/data_fusion)
 
