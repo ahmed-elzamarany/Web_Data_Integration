@@ -8,8 +8,8 @@
 		</authors>
 		<rating>3</rating>
 		<pages>435</pages>
-		<year>1997</year>
-		<publisher>Houghton Mifflin Harcourt</publisher>
+		<year>1998</year>
+		<publisher>Vintage</publisher>
 		<price>9</price>
 		<language>English</language>
 		<genres>
@@ -37,8 +37,6 @@
 			<genre_type>Wicca</genre_type>
 			<genre_type>Nonfiction</genre_type>
 			<genre_type>Spirituality</genre_type>
-			<genre_type>Religion</genre_type>
-			<genre_type>Religion</genre_type>
 			<genre_type>Paganism</genre_type>
 			<genre_type>Witchcraft</genre_type>
 		</genres>
@@ -60,7 +58,6 @@
 			<genre_type>Historical</genre_type>
 			<genre_type>Historical Fiction</genre_type>
 			<genre_type>Fiction</genre_type>
-			<genre_type>Historical</genre_type>
 			<genre_type>European Literature</genre_type>
 			<genre_type>British Literature</genre_type>
 		</genres>
@@ -83,7 +80,6 @@
 			<genre_type>Historical Fiction</genre_type>
 			<genre_type>Fiction</genre_type>
 			<genre_type>Romance</genre_type>
-			<genre_type>Historical</genre_type>
 			<genre_type>European Literature</genre_type>
 			<genre_type>British Literature</genre_type>
 		</genres>
@@ -121,10 +117,8 @@
 		<language>English</language>
 		<genres>
 			<genre_type>Romance</genre_type>
-			<genre_type>Romance</genre_type>
 			<genre_type>Contemporary Romance</genre_type>
 			<genre_type>Contemporary</genre_type>
-			<genre_type>Romance</genre_type>
 			<genre_type>Romantic Suspense</genre_type>
 			<genre_type>Suspense</genre_type>
 		</genres>
@@ -138,8 +132,8 @@
 		</authors>
 		<rating>4</rating>
 		<pages>226</pages>
-		<year>1999</year>
-		<publisher>MTV Books</publisher>
+		<year>2001</year>
+		<publisher>Books on Tape</publisher>
 		<price>6</price>
 		<language>English</language>
 		<genres>
@@ -173,7 +167,6 @@
 		<authors>
 			<author>
 				<name>Jean-François Revel</name>
-				<name>Matthieu Ricard</name>
 			</author>
 		</authors>
 		<rating>4</rating>
@@ -207,7 +200,6 @@
 		<genres>
 			<genre_type>Fiction</genre_type>
 			<genre_type>Young Adult</genre_type>
-			<genre_type>Childrens</genre_type>
 			<genre_type>Realistic Fiction</genre_type>
 			<genre_type>Childrens</genre_type>
 			<genre_type>Middle Grade</genre_type>
@@ -247,13 +239,11 @@
 		<price>5</price>
 		<language>English</language>
 		<genres>
-			<genre_type>Mystery</genre_type>
 			<genre_type>Fiction</genre_type>
 			<genre_type>Thriller</genre_type>
 			<genre_type>Suspense</genre_type>
 			<genre_type>Mystery</genre_type>
 			<genre_type>Crime</genre_type>
-			<genre_type>Thriller</genre_type>
 			<genre_type>Mystery Thriller</genre_type>
 		</genres>
 	</book>
@@ -266,8 +256,8 @@
 		</authors>
 		<rating>3</rating>
 		<pages>112</pages>
-		<year>1975</year>
-		<publisher>Farrar, Straus and Giroux</publisher>
+		<year>1999</year>
+		<publisher>Bantam</publisher>
 		<price>8</price>
 		<language>English</language>
 		<genres>
@@ -276,7 +266,6 @@
 			<genre_type>Writing</genre_type>
 			<genre_type>Essays</genre_type>
 			<genre_type>History</genre_type>
-			<genre_type>Art</genre_type>
 			<genre_type>Art History</genre_type>
 			<genre_type>Criticism</genre_type>
 			<genre_type>Culture</genre_type>
@@ -310,6 +299,8 @@
 			<author>
 				<name>Jeph Loeb</name>
 				<name>Tim Sale</name>
+				<name>Gregory Wright</name>
+				<name>Richard Starkings</name>				
 			</author>
 		</authors>
 		<rating>4</rating>
@@ -320,14 +311,11 @@
 		<genres>
 			<genre_type>Sequential Art</genre_type>
 			<genre_type>Comics</genre_type>
-			<genre_type>Sequential Art</genre_type>
 			<genre_type>Graphic Novels</genre_type>
 			<genre_type>Dc Comics</genre_type>
 			<genre_type>Batman</genre_type>
 			<genre_type>Superheroes</genre_type>
-			<genre_type>Dc Comics</genre_type>
 			<genre_type>Fiction</genre_type>
-			<genre_type>Comics</genre_type>
 			<genre_type>Comic Book</genre_type>
 		</genres>
 	</book>
@@ -400,14 +388,13 @@
 		</authors>
 		<rating>3</rating>
 		<pages>320</pages>
-		<year>1999</year>
-		<publisher>Tor Books</publisher>
+		<year>2000</year>
+		<publisher>Tor Science Fiction</publisher>
 		<price>6</price>
 		<language>English</language>
 		<genres>
 			<genre_type>Science Fiction</genre_type>
 			<genre_type>Fiction</genre_type>
-			<genre_type>Science Fiction</genre_type>
 			<genre_type>Time Travel</genre_type>
 		</genres>
 	</book>
@@ -420,8 +407,8 @@
 		</authors>
 		<rating>4</rating>
 		<pages>198</pages>
-		<year>1999</year>
-		<publisher>Houghton Mifflin Harcourt</publisher>
+		<year>2000</year>
+		<publisher>Houghton Mifflin Company</publisher>
 		<price>8</price>
 		<language>English</language>
 		<genres>
@@ -526,9 +513,8 @@
 		</authors>
 		<rating>4</rating>
 		<pages>1396</pages>
-		<year>1997</year>
-		<publisher>Signet Book</publisher>
-		<price>7</price>
+		<year>1987</year>
+		<publisher>New Amer Library</publisher>
 		<language>English</language>
 		<genres>
 			<genre_type>Horror</genre_type>
@@ -596,9 +582,7 @@
 		<language>English</language>
 		<genres>
 			<genre_type>Romance</genre_type>
-			<genre_type>Romance</genre_type>
 			<genre_type>Romantic Suspense</genre_type>
-			<genre_type>Romance</genre_type>
 			<genre_type>Contemporary Romance</genre_type>
 			<genre_type>Mystery</genre_type>
 			<genre_type>Contemporary</genre_type>
@@ -621,10 +605,8 @@
 		<language>English</language>
 		<genres>
 			<genre_type>Romance</genre_type>
-			<genre_type>Romance</genre_type>
 			<genre_type>Romantic Suspense</genre_type>
 			<genre_type>Contemporary</genre_type>
-			<genre_type>Romance</genre_type>
 			<genre_type>Contemporary Romance</genre_type>
 			<genre_type>Mystery</genre_type>
 			<genre_type>Suspense</genre_type>
@@ -701,8 +683,8 @@
 		</authors>
 		<rating>3.5</rating>
 		<pages>384</pages>
-		<year>1994</year>
-		<publisher>Harpercollins Childrens Books</publisher>
+		<year>1995</year>
+		<publisher>Warner Books</publisher>
 		<price>6</price>
 		<language>English</language>
 		<genres>
@@ -730,7 +712,6 @@
 			<genre_type>Romance</genre_type>
 			<genre_type>Christian</genre_type>
 			<genre_type>Fiction</genre_type>
-			<genre_type>Romance</genre_type>
 			<genre_type>Christian Romance</genre_type>
 		</genres>
 	</book>
@@ -743,7 +724,7 @@
 		</authors>
 		<rating>4</rating>
 		<pages>1120</pages>
-		<year>1992</year>
+		<year>1993</year>
 		<publisher>Simon &amp;amp; Schuster</publisher>
 		<price>13</price>
 		<language>English</language>
@@ -766,14 +747,13 @@
 		</authors>
 		<rating>4</rating>
 		<pages>324</pages>
-		<year>1986</year>
-		<publisher>Houghton Mifflin Harcourt</publisher>
+		<year>1999</year>
+		<publisher>Chivers Audio Books</publisher>
 		<price>9</price>
 		<language>English</language>
 		<genres>
 			<genre_type>Fiction</genre_type>
 			<genre_type>Classics</genre_type>
-			<genre_type>Science Fiction</genre_type>
 			<genre_type>Dystopia</genre_type>
 			<genre_type>Science Fiction</genre_type>
 			<genre_type>Feminism</genre_type>
@@ -794,7 +774,6 @@
 		<language>English</language>
 		<genres>
 			<genre_type>Sports and Games</genre_type>
-			<genre_type>Sports</genre_type>
 			<genre_type>Sports</genre_type>
 			<genre_type>Baseball</genre_type>
 			<genre_type>Nonfiction</genre_type>
@@ -819,18 +798,13 @@
 		<genres>
 			<genre_type>Science</genre_type>
 			<genre_type>Nonfiction</genre_type>
-			<genre_type>Science</genre_type>
 			<genre_type>Astronomy</genre_type>
 			<genre_type>Space</genre_type>
 			<genre_type>Philosophy</genre_type>
-			<genre_type>Science</genre_type>
 			<genre_type>Physics</genre_type>
-			<genre_type>Science</genre_type>
 			<genre_type>Popular Science</genre_type>
-			<genre_type>Science</genre_type>
 			<genre_type>Technology</genre_type>
 			<genre_type>Reference</genre_type>
-			<genre_type>Science</genre_type>
 			<genre_type>Engineering</genre_type>
 		</genres>
 	</book>
@@ -872,13 +846,9 @@
 			<genre_type>Spirituality</genre_type>
 			<genre_type>Nonfiction</genre_type>
 			<genre_type>Religion</genre_type>
-			<genre_type>Religion</genre_type>
 			<genre_type>Christianity</genre_type>
-			<genre_type>Religion</genre_type>
 			<genre_type>Theology</genre_type>
-			<genre_type>Religion</genre_type>
 			<genre_type>Faith</genre_type>
-			<genre_type>Christian</genre_type>
 			<genre_type>Christian Living</genre_type>
 			<genre_type>Classics</genre_type>
 			<genre_type>Prayer</genre_type>
@@ -895,7 +865,6 @@
 		<pages>176</pages>
 		<year>1997</year>
 		<publisher>Grove Press</publisher>
-		<price>9</price>
 		<language>English</language>
 		<genres>
 			<genre_type>Fiction</genre_type>
@@ -905,7 +874,6 @@
 			<genre_type>Lgbt</genre_type>
 			<genre_type>Glbt</genre_type>
 			<genre_type>Queer</genre_type>
-			<genre_type>Historical</genre_type>
 		</genres>
 	</book>
 	<book>
@@ -947,7 +915,6 @@
 			<genre_type>Holiday</genre_type>
 			<genre_type>Christmas</genre_type>
 			<genre_type>Romance</genre_type>
-			<genre_type>Holiday</genre_type>
 			<genre_type>Fiction</genre_type>
 			<genre_type>Womens Fiction</genre_type>
 			<genre_type>Chick Lit</genre_type>
@@ -962,14 +929,13 @@
 		</authors>
 		<rating>4</rating>
 		<pages>144</pages>
-		<year>1996</year>
+		<year>1998</year>
 		<publisher>Delacorte Books for Young Readers</publisher>
 		<price>5</price>
 		<language>English</language>
 		<genres>
 			<genre_type>Young Adult</genre_type>
 			<genre_type>Fiction</genre_type>
-			<genre_type>Adventure</genre_type>
 			<genre_type>Adventure</genre_type>
 			<genre_type>Survival</genre_type>
 			<genre_type>Realistic Fiction</genre_type>
@@ -984,8 +950,8 @@
 		</authors>
 		<rating>3</rating>
 		<pages>304</pages>
-		<year>2002</year>
-		<publisher>Random House; 1 edition</publisher>
+		<year>2004</year>
+		<publisher>Fawcett Books</publisher>
 		<price>10</price>
 		<language>English</language>
 		<genres>
@@ -1003,18 +969,15 @@
 		</authors>
 		<rating>4</rating>
 		<pages>546</pages>
-		<publisher>Atria Books</publisher>
+		<publisher>Pocket Books</publisher>
 		<price>5</price>
 		<language>English</language>
-		<year>1999</year>
+		<year>2003</year>
 		<genres>
 			<genre_type>Romance</genre_type>
 			<genre_type>Historical Romance</genre_type>
-			<genre_type>Romance</genre_type>
-			<genre_type>Historical</genre_type>
 			<genre_type>Historical</genre_type>
 			<genre_type>Historical Fiction</genre_type>
-			<genre_type>Historical</genre_type>
 			<genre_type>Medieval</genre_type>
 		</genres>
 	</book>

@@ -40,7 +40,7 @@ public class BookPageComparator50Page implements Comparator<Books, Attribute> {
 			Books record2,
 			Correspondence<Attribute, Matchable> schemaCorrespondences) {
     	
-    	double similarity = sim.calculate((double)record1.getPages(), (double)record2.getPages());
+    	double similarity = sim.calculate(Double.parseDouble(record1.getPages()), Double.parseDouble(record2.getPages()));
     	
 		if(this.comparisonLog != null){
 			this.comparisonLog.setComparatorName(getClass().getName());
